@@ -1,0 +1,30 @@
+name: Window opener
+products:
+  - id: 4w6o5buyvgps5vqk
+    model: Casement window opener
+entities:
+  - entity: cover
+    class: window
+    dps:
+      - id: 2
+        type: string
+        name: control
+        mapping:
+          - dps_val: open
+            value: open
+          - dps_val: close
+            value: close
+          - dps_val: stop
+            value: stop
+      - id: 7
+        type: integer
+        name: position
+        range:
+          min: 0
+          max: 100
+      - id: 7
+        type: integer
+        name: current_position
+        range:
+          min: 0
+          max: 100
